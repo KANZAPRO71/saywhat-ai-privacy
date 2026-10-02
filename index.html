@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--
+      Publishable privacy policy for SayWhat AI.
+      support@example.com and https://kanzapro71.github.io/saywhat-ai-privacy/ are filled at build time from
+      CONTACT_EMAIL and PRIVACY_POLICY_URL in src/config/app-config.ts. Set those
+      to a real, monitored address and the hosted URL before submitting to Google
+      Play, then host dist/privacy.html (not this file) at that URL.
+    -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
+    <title>Privacy Policy — SayWhat AI</title>
+    <style>
+      :root {
+        --brand: #1557e0;
+        --ink: #0b1a3a;
+        --ink-600: #46557a;
+        --ink-500: #6b7a9b;
+        --line: #e7ecf6;
+        --canvas: #f4f6fc;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0 20px 96px;
+        background: var(--canvas);
+        color: var(--ink);
+        font-family: ui-sans-serif, system-ui, 'Segoe UI', -apple-system, sans-serif;
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+      }
+      .wrap {
+        max-width: 720px;
+        margin: 0 auto;
+      }
+      header {
+        padding: 48px 0 28px;
+        border-bottom: 1px solid var(--line);
+        margin-bottom: 32px;
+      }
+      .mark {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+      .mark span {
+        display: grid;
+        place-items: center;
+        width: 34px;
+        height: 34px;
+        border-radius: 999px;
+        background: radial-gradient(circle at 50% 42%, #2b4a86 0%, #0b1a3a 72%);
+      }
+      .mark b {
+        font-size: 19px;
+        letter-spacing: -0.02em;
+      }
+      .mark b i {
+        color: var(--brand);
+        font-style: normal;
+      }
+      h1 {
+        font-size: 32px;
+        letter-spacing: -0.03em;
+        margin: 0 0 8px;
+      }
+      .meta {
+        color: var(--ink-500);
+        font-size: 14px;
+        margin: 0;
+      }
+      h2 {
+        font-size: 19px;
+        letter-spacing: -0.01em;
+        margin: 36px 0 10px;
+      }
+      p,
+      li {
+        color: var(--ink-600);
+        font-size: 15.5px;
+      }
+      strong {
+        color: var(--ink);
+      }
+      ul {
+        padding-left: 20px;
+      }
+      li {
+        margin: 8px 0;
+      }
+      .card {
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 18px 20px;
+        margin: 20px 0;
+      }
+      .card h2 {
+        margin-top: 0;
+      }
+      code {
+        background: #eef2f9;
+        padding: 1px 6px;
+        border-radius: 6px;
+        font-size: 13.5px;
+      }
+      a {
+        color: var(--brand);
+      }
+      footer {
+        margin-top: 48px;
+        padding-top: 24px;
+        border-top: 1px solid var(--line);
+        color: var(--ink-500);
+        font-size: 13.5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="mark">
+          <span>
+            <svg viewBox="0 0 44 44" width="20" height="20" aria-hidden="true">
+              <g fill="#fff">
+                <rect x="10" y="17" width="3" height="10" rx="1.5" opacity=".6" />
+                <rect x="15" y="13" width="3" height="18" rx="1.5" opacity=".7" />
+                <rect x="20" y="9" width="3" height="26" rx="1.5" opacity=".82" />
+                <rect x="25" y="13" width="3" height="18" rx="1.5" opacity=".9" />
+                <rect x="30" y="17" width="3" height="10" rx="1.5" />
+              </g>
+            </svg>
+          </span>
+          <b>SayWhat <i>AI</i></b>
+        </div>
+        <h1>Privacy Policy</h1>
+        <p class="meta">Last updated: 2 October 2026</p>
+      </header>
+
+      <p>
+        SayWhat AI is an English speaking practice app. It has <strong>no servers of its
+        own</strong>, no accounts, no analytics and no advertising. Everything it sends leaves
+        your device directly for Google's Gemini API, using a Gemini API key that you create
+        and paste into the app. We (the developer) do not receive your voice, your text or
+        your key.
+      </p>
+
+      <div class="card">
+        <h2>The short version</h2>
+        <ul>
+          <li>We do not run accounts, analytics, advertising, or tracking, and we have no server that receives your data.</li>
+          <li>Your voice (audio) and some text are sent from your device to Google's Gemini API so the app can work. This is encrypted in transit (HTTPS and secure WebSocket).</li>
+          <li>Your Gemini API key, progress, settings and up to 100 conversation reports are stored on your device only, <strong>without encryption</strong>.</li>
+          <li>If your Gemini key uses Google's free tier, Google says it may use what you send to improve its products. See <a href="#google">How Google uses your data</a>.</li>
+        </ul>
+      </div>
+
+      <h2>What stays on your device</h2>
+      <p>
+        The following is written to this app's local storage on your device:
+      </p>
+      <ul>
+        <li>Your Gemini API key, if you entered one.</li>
+        <li>Your display name, profile avatar or resized photo, English level, the language you chose for help and word explanations (if any), learning goal, daily practice goal, streak, XP and lesson count.</li>
+        <li>Your chosen tutor, accent, exam mode and other app settings.</li>
+        <li>Up to 100 recent conversation reports, including the session transcript, the on-device feedback and the AI review if one was made.</li>
+        <li>Pronunciation scores and vocabulary progress.</li>
+      </ul>
+      <p>
+        This storage is <strong>not encrypted</strong> by the app. Anyone who can read this
+        app's storage on your device could read it, including your API key. On Android the app
+        excludes all of this data from Google cloud backup and from device-to-device transfer, so
+        it stays on this device. Uninstalling the app, clearing its data, or using
+        <em>Profile → Reset app data</em> permanently deletes it. Use
+        <em>Session History → Clear</em> to remove only the saved conversation reports. We cannot
+        recover deleted data for you.
+      </p>
+      <p>
+        A profile photo is resized on your device and stored locally. It is used only to display
+        your profile and is never sent to us or to Google.
+      </p>
+
+      <h2>Microphone</h2>
+      <p>
+        The app asks for microphone access the first time you use a feature that listens to you,
+        and it only listens while that feature is in use. Four features use the microphone:
+      </p>
+      <ul>
+        <li><strong>Speak</strong> (a live conversation with your tutor) and <strong>Role Play</strong>
+          (the same conversation in a scene you choose or describe): your voice is streamed to
+          Google's Gemini Live API while the conversation is running, so the tutor can hear and
+          answer you.</li>
+        <li><strong>Pronunciation Coach</strong>: each recording you make of a word or phrase is
+          sent to Gemini to be scored.</li>
+        <li><strong>Shadowing</strong>: each recording you make while copying a line is sent to
+          Gemini to be compared with the original and scored.</li>
+      </ul>
+      <p>
+        During Speak and Role Play, a spoken turn may also be <strong>sent to Gemini a second
+        time</strong> in a separate request, so Gemini can give a short pronunciation
+        ("Clarity") note on that turn. By default this happens at most about once a minute; you can
+        turn it off or make it happen for every turn in <em>Profile → How your tutor talks →
+        Clarity notes</em>.
+      </p>
+      <p>
+        SayWhat AI does not save your recordings to any server we control, and it does not keep
+        audio on your device after it has been sent.
+      </p>
+
+      <h2>Text sent to Google</h2>
+      <ul>
+        <li>The instructions for your tutor, which include your level, chosen scene, accent, exam
+          mode, learning goal and the help language you chose (if any).</li>
+        <li>Anything you type into a conversation.</li>
+        <li>After a conversation, the transcript text is sent to Gemini to write the AI review.
+          The review is then saved on your device with the session, so reopening it from History
+          does not send the transcript again.</li>
+        <li>When you tap <em>Translate</em>, your sentence is sent to Gemini to be translated into
+          the language you chose; when you tap <em>Replay</em> or a "hear it" button, the text to
+          be spoken is sent so Gemini can read it aloud.</li>
+        <li>When you ask for a new lesson on Home, a summary of your progress (level, number of
+          sessions, words met, grammar notes and average pronunciation score) is sent.</li>
+      </ul>
+
+      <h2>Your Google API key</h2>
+      <p>
+        SayWhat AI uses a bring-your-own-key model. When you connect a Gemini API key, it is
+        saved in this app's local storage on your device, unencrypted. When you start a
+        conversation the app asks Google for a short-lived, single-use token, and that token —
+        not your key — opens the live conversation connection. Other requests send the key to
+        Google in a request header.
+      </p>
+      <p>
+        <strong>Your key is sent to Google and to nobody else.</strong> It appears only in
+        requests to <code>generativelanguage.googleapis.com</code>. It is never sent to us or to
+        any other party. Treat it like a password: if this device is shared or lost, delete the
+        key in Google AI Studio.
+      </p>
+      <p>
+        You can remove the key at any time in <strong>Profile → Gemini API Key → Remove</strong>.
+        Any cost of using the Gemini API is between you and Google; the app charges nothing.
+      </p>
+
+      <h2 id="google">How Google uses your data</h2>
+      <p>
+        What you send to Gemini is handled by Google under the
+        <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API Additional Terms of Service</a>
+        and the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.
+        Google states that when the Gemini API is used on the <strong>free tier</strong>, the
+        content you send and the responses may be used to improve Google's products, and may be
+        reviewed by people. On a key with billing turned on (the paid tier), Google states it does
+        not use that data to improve its products. Do not say or type anything sensitive or
+        personal in a practice session.
+      </p>
+
+      <h2>AI-generated content</h2>
+      <p>
+        Your tutor's replies, reviews, translations and scores are generated by Google's Gemini
+        model. They can be wrong or, rarely, inappropriate. You can report any AI reply from
+        inside the app with the <em>Report</em> (flag) button on the Speak and Feedback screens,
+        which opens an email to us with the reply already filled in, or by writing to the address
+        below.
+      </p>
+
+      <h2>No data sharing, no selling</h2>
+      <p>
+        We do not sell or rent personal information. Google receives the audio and text
+        described above because that is how the app works. There is no third-party advertising
+        or analytics SDK in this app.
+      </p>
+
+      <h2>Children</h2>
+      <p>
+        SayWhat AI is intended for users aged 13 and over who can create and manage their own
+        Gemini API key. It is not directed at children under 13, and we do not knowingly collect
+        information from them.
+      </p>
+
+      <h2>Your rights</h2>
+      <p>
+        Because the app holds no server-side copy of your data, there is nothing for us to
+        export or delete. You can clear conversation reports in Session History, reset app data
+        in Profile, or uninstall the app to remove all local data. For data sent to Google, use
+        Google's own tools and terms.
+      </p>
+
+      <h2>Changes to this policy</h2>
+      <p>
+        If this policy changes, the date at the top of this page will be updated. Material
+        changes will also be noted in the app's release notes on Google Play. The current version
+        is published at <a href="https://kanzapro71.github.io/saywhat-ai-privacy/" target="_blank" rel="noopener">https://kanzapro71.github.io/saywhat-ai-privacy/</a>.
+      </p>
+
+      <h2 id="support">Contact</h2>
+      <p>
+        Questions, a report about an AI reply, or a request about your privacy can be sent to
+        <a href="mailto:support@example.com"><strong>support@example.com</strong></a>. We aim to reply
+        within 30 days.
+      </p>
+
+      <footer>
+        SayWhat AI — your AI English speaking partner. Conversation using your own Gemini API
+        key. No ads, no account.
+      </footer>
+    </div>
+  </body>
+</html>
